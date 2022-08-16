@@ -1,0 +1,35 @@
+<!--pages/music/music.wxml-->
+<view class="header">
+  <view class="left">
+    <view class="box_left">
+      <view class="july">No.</view>
+      <view class="yue">{{moth}}</view>
+      <view class="line"></view>
+    </view>
+    <view class="box_right">
+      六月{{year}}
+    </view>
+  </view>
+  <view class="right">
+    <view class="like">
+      <image bindtap="onTap" src="{{like?'/images/选中爱心.png':'/images/未选中爱心.png'}}" class="img"></image>
+      <text class="num">{{num}}</text>
+    </view>
+    <image class="fx_img" src="/images/分享.png"></image>
+  </view>
+</view>
+<view class="center">
+  <view class="music_box">
+    <view class="music">
+        <image bindtap="toPlay" src="{{newData.image}}" class="music_img {{type==200?'active':''}}"></image>
+        <image src="{{music?'/images/music/c4eefd720b201a00b80568ba9476040.png':'/images/music/bd0d86b2a6924b678819525633f25ef.png'}}" class="play {{type==200?'active':''}}" ></image>
+    </view>
+    <image src="/images/music/e5339bdd7a7acb5ea829ca8e72a30bc.png" class="item_img"></image>
+  </view>
+</view>
+<view class="container_box">{{newData.content}}</view>
+<view class="title">
+  <image src="/images/music/左箭头.png" bindtap="prev"></image>
+  <text>{{newData.title}}</text>
+  <image src="/images/music/右箭头.png" bindtap="next"></image>
+</view>

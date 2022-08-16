@@ -1,0 +1,17 @@
+<!--pages/classFy/classFy.wxml-->
+<view class="box">
+  <view class="left">
+    <block wx:for="{{product}}" wx:key="id">
+      <text mark:index="{{index}}" bindtap="onTap" class="name {{index==curIndex?'active':''}}">{{item.name}}</text>
+    </block>
+  </view>
+  <view class="right">
+    <image src="{{rightData.img}}" class="header"></image>
+    <view class="title">{{rightData.name}}</view>
+    <view class="footer">
+      <block wx:for="{{rightData.products}}" wx:key="id">
+        <c_list product="{{item}}"></c_list>
+      </block>
+    </view>
+  </view>
+</view>

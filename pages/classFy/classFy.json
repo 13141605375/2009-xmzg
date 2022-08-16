@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "c_list": "/components/shop_list"
+  }
+}

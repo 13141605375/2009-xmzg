@@ -1,0 +1,18 @@
+<!--pages/app_sy/app_sy.wxml-->
+<view class="header">
+  <swiper class="swiper" circular autoplay 	indicator-dots indicator-active-color="#fff">
+    <block wx:for="{{banner}}" wx:key="key_word">
+      <swiper-item class="swiper-item">
+        <image src="{{item.img.url}}" class="swiper_img"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="title">精选主题</view>
+<view class="main_box">
+  <block wx:for="{{theme}}" wx:key="id">
+    <image mark:id="{{item.id}}" bindtap="naviTo" src="{{item.topic_img.url}}" class="main_img"></image>
+  </block>
+</view>
+<view class="title">最近新品</view>
+<c_price list="{{recent}}"></c_price>

@@ -1,0 +1,56 @@
+{
+  "projectname": "%E9%A1%B9%E7%9B%AE%E9%87%8D%E6%9E%84",
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": false
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "杂货商贩首页",
+          "pathName": "pages/app_sy/app_sy",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "杂货商贩分类",
+          "pathName": "pages/classFy/classFy",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "首页精选主题",
+          "pathName": "pages/app_xq/app_xq",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "杂货商贩详情",
+          "pathName": "pages/detail/detail",
+          "query": "id=11",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "杂货商贩购物车",
+          "pathName": "pages/cart/cart",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "音乐",
+          "pathName": "pages/music/music",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+/* pages/order/order.wxss */
+.header{
+  width: 100vw;
+  display: flex;
+}
+.left{
+  width: 90%;
+  padding: 20rpx 30rpx;
+  box-sizing: border-box;
+}
+.box{
+  display: flex;
+  height: 80rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.user,.moblie{
+  display: flex;
+  align-items: center;
+}
+.img{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}

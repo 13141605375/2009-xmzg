@@ -1,0 +1,45 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail_top">
+  <view bindtap="navigate" class="header_box">
+    <text class="header_num" wx:if="{{sum>0}}">{{sum}}</text>
+    <image src="/images/icon/cart@top.png" class="header_img"></image>
+  </view>
+  <image src="{{detailData.main_img_url}}" class="img"></image>
+  <view class="box">
+    <picker mode="selector" bindchange="onChange" range="{{arr}}" class="picker">
+      <view class="left">
+        <view class="num_box">数量</view>
+        <text class="num">{{num}}</text>
+        <image src="/images/下拉.png" class="select_img"></image>
+      </view>
+    </picker>
+    <view class="right" bindtap="onAddCart">
+      <view class="add_cart">加入购物车</view>
+      <image src="/images/购物车添加.png" class="shop_cart"></image>
+      <image style="transform: {{translateStyle}}" src="/images/圆点.png" class="{{isFly?'fly':''}} add_img"></image>
+    </view>
+  </view>
+  <view class="box2">
+    <text>{{detailData.stock<=0?'无货':'有货'}}</text>
+    <text class="title">{{detailData.name}}</text>
+    <text class="price">{{detailData.price}}</text>
+  </view>
+</view>
+<view class="detail_bottom">
+    <view class="btnList">
+        <block wx:for="{{btnList}}" wx:key="index">
+            <view bindtap="onTap" mark:index="{{index}}" class="list {{index==curIndex?'active':''}}">{{item}}</view>
+        </block>
+    </view>
+    <view hidden="{{curIndex!=0}}" class="item_box">
+        <block wx:for="{{detailData.imgs}}" wx:key="index">
+            <image src="{{item.img_url.url}}" class="item_img"></image>
+        </block>
+    </view>
+    <view hidden="{{curIndex!=1}}" class="item_box">
+        <block wx:for="{{detailData.properties}}" wx:key="index">
+            <view>{{item.name}}:{{item.detail}}</view>
+        </block>
+    </view>
+    <view hidden="{{curIndex!=2}}" class="item_box">7天无理由退货</view>
+</view>

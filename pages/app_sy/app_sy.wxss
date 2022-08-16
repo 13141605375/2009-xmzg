@@ -1,0 +1,37 @@
+/* pages/app_sy/app_sy.wxss */
+.header{
+  width: 100%;
+}
+.swiper{
+  width: 100%;
+  height: 400rpx;
+}
+.swiper_img{
+  width: 100%;
+  height: 400rpx;
+}
+.title{
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: #ab956d;
+} 
+.main_box{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main_img{
+  width: 50%;
+  height: 400rpx;
+}
+.main_img:nth-child(1){
+  border-right: 1rpx solid transparent;
+  box-sizing: border-box;
+}
+.main_img:last-child{
+  width: 100%;
+  border-top: 2rpx solid transparent;
+}

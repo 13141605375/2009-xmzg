@@ -1,0 +1,8 @@
+<!--components/shop_price/index.wxml-->
+<view class="list">
+  312312321
+  <block wx:for="{{list}}" wx:key="id">
+    <c_list class="pro" product="{{item}}">￥{{item.price}}</c_list>
+  </block>
+</view>
+

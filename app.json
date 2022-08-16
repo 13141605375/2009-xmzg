@@ -1,0 +1,51 @@
+{
+    "pages": [
+        "pages/app_sy/app_sy",
+        "pages/classFy/classFy",
+        "pages/cart/cart",
+        "pages/detail/detail",
+        "pages/theme/theme",
+        "pages/app_xq/app_xq",
+        "pages/order/order",
+        "pages/music/music"
+    ],
+    "window": {
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#ab956d",
+      "navigationBarTitleText": "杂货商贩",
+      "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#ccc",
+        "selectedColor": "#f00",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/app_sy/app_sy",
+                "text": "主页",
+                "iconPath": "/images/杂货商品/主页 (1).png",
+                "selectedIconPath": "/images/杂货商品/主页.png"
+            },{
+                "pagePath": "pages/classFy/classFy",
+                "text": "分类",
+                "iconPath": "/images/杂货商品/分类.png",
+                "selectedIconPath": "/images/杂货商品/分类 (1).png"
+            },
+            {
+                "pagePath": "pages/cart/cart",
+                "text": "购物车",
+                "iconPath": "/images/杂货商品/3.1购物车.png",
+                "selectedIconPath": "/images/杂货商品/3.1购物车-选中.png"
+            },
+            {
+                "pagePath": "pages/theme/theme",
+                "text": "我的",
+                "iconPath": "/images/杂货商品/3.1我的.png",
+                "selectedIconPath": "/images/杂货商品/我的-我的.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "requiredBackgroundModes": ["audio"]
+}

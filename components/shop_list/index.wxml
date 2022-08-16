@@ -1,0 +1,7 @@
+<!--components/shop_list/index.wxml-->
+<view bindtap="navigate" mark:id="{{id}}" class="item_box">
+  <image class="img" src="{{product.main_img_url}}"></image>
+  <text class="name">{{product.name}}</text>
+  <slot></slot>
+</view>
+

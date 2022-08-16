@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "c_price":"/components/shop_price/index"
+  }
+}
